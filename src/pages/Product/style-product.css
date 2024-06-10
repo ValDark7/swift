@@ -1,0 +1,369 @@
+.product-page {
+  margin: 0;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
+
+.main-photo img {
+  margin-top: -100px;
+  width: 800px;
+  margin-left: 200px;
+  z-index: -2;
+}
+
+.photo img {
+  border: 1px solid #747474;
+  border-radius: 5px;
+  width: 70px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.photo img:hover {
+  scale: 1.1;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.photo img:first-child {
+  margin-left: 420px;
+}
+
+.info-product {
+  background: white;
+  height: 74vh;
+  width: 400px;
+  margin-top: -790px;
+  margin-left: 1200px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.info-product p {
+  margin-bottom: 20px;
+}
+
+.head {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.under-info {
+  font-size: 15px;
+  margin-top: -10px;
+  opacity: 0.6;
+  font-weight: 300;
+}
+
+.info-sizes {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.btn-size {
+  background: #f2f2f2;
+  width: 70px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+  margin-left: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-size.active {
+  opacity: 1;
+  color: #f2f2f2;
+  background: black;
+}
+
+.line-size {
+  border: 0;
+  height: 1px;
+  background: #333;
+  width: 300px;
+  margin: 10px auto;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #414141, #f0f0f0);
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.in-cart {
+  background: rgb(18, 18, 18);
+  border: none;
+  width: 287px;
+  min-height: 57px;
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.one-click {
+  width: 287px;
+  height: 57px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-back {
+  background: rgb(18, 18, 18);
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.product-color {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.product-color div {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.product-color div.active {
+  scale: 1.2;
+}
+
+.black.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #0b0b0b;
+}
+
+.green.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #17ca50;
+}
+
+.yellow.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #ffff38;
+}
+
+.lightseagreen.active {
+  box-shadow: 0px 0px 15px -2px lightseagreen;
+}
+
+.blue.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #1752d0;
+}
+
+.red.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #c71d1d;
+}
+
+.purple.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #d629f0;
+}
+
+.white.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #989898;
+}
+
+.orange.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #ffb62f;
+}
+
+.grey.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px #aaaaaa;
+}
+
+.sienna.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px sienna;
+}
+
+.burlywood.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px sienna;
+}
+
+.peachpuff.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px peachpuff;
+}
+
+.pink.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px pink;
+}
+
+.lightseagreen.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px lightseagreen;
+}
+
+.lightseagreen.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px gainsboro;
+}
+
+.darkblue.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px darkblue;
+}
+
+.darkolivegreen.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px darkolivegreen;
+}
+
+.greenyellow.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px greenyellow;
+}
+
+.brown.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px brown;
+}
+
+.skyblue.active {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px -2px skyblue;
+}
+
+.wrapper-info {
+  display: flex;
+  font-size: 30px;
+}
+
+.wrapper-info li:first-child {
+  margin: 0;
+}
+
+.wrapper-info li {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.wrapper-info li:hover {
+  opacity: 0.4;
+}
+
+.wrapper-info li.active {
+  border-bottom: 3px solid black;
+}
+
+.information-product {
+  margin-top: 200px;
+  width: 40%;
+  margin-left: 150px;
+}
+
+.main-info {
+  margin-top: 30px;
+}
+
+.ReactModal__Content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.overlayModal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modalWindow {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 80%;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  text-align: center;
+  overflow: hidden;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.modalWindow p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.modalWindow button {
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s ease-in-out;
+  background-color: #141414;
+  color: #fff;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

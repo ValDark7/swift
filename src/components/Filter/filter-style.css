@@ -1,0 +1,85 @@
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--dusk);
+  --accent: var(--white);
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: white;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  -webkit-border-radius: 1ex;
+}
+
+.menu {
+  width: 220px;
+  height: 30px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.filter-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--accent);
+  z-index: -1;
+}
+
+.filter-li {
+  color: #222;
+  display: block;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.filter-li:hover {
+  color: white;
+  background-color: #222;
+  border-radius: 15px;
+}
+
+.filter-ul,
+.filter-li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.filter-btn {
+  background: #222;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-btn path {
+  fill: white;
+}

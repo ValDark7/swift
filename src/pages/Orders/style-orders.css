@@ -1,0 +1,38 @@
+.container-orders {
+  display: flex;
+}
+
+.all-orders {
+  margin-top: 100px;
+}
+
+.all-orders div h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.all-orders div p {
+  font-size: 18px;
+}
+
+.all-orders div:first-child {
+  margin-bottom: 100px;
+}
+
+.package {
+  position: absolute;
+  right: 200px;
+  margin-top: 200px;
+  animation-duration: 1s;
+  animation-name: slide;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slide {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 200px;
+  }
+}

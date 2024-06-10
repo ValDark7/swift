@@ -1,0 +1,67 @@
+{
+  "hits": [
+    {
+      "id": 1,
+      "name": "Nike",
+      "subname": "Air Jordan 1 Mid",
+      "price": 189,
+      "image": "/hits/hits-product/dv0991-111-0.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nike",
+      "subname": "Air Force 1 '07",
+      "price": 169,
+      "image": "/hits/hits-product/fz4627-800-4.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Puma",
+      "subname": "Playmaker 2023",
+      "price": 99,
+      "image": "/hits/hits-product/392330-09-0.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Puma",
+      "subname": "RS-X Triple",
+      "price": 139,
+      "image": "/hits/hits-product/391928-02-0.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Puma",
+      "subname": "Classic Leather Hexalite",
+      "price": 119,
+      "image": "/hits/hits-product/100074404-0.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Puma",
+      "subname": "Spirex Premium",
+      "price": 159,
+      "image": "/hits/hits-product/397375-02-0.jpg"
+    },
+    {
+      "id": 7,
+      "name": "New Balance",
+      "subname": "ML574D2B",
+      "price": 139,
+      "image": "/hits/hits-product/ml574d2b-0.jpg"
+    },
+    {
+      "id": 8,
+      "name": "New Balance",
+      "subname": "U327EB",
+      "price": 139,
+      "image": "/hits/hits-product/u327eb-0.jpg"
+    },
+    {
+      "id": 9,
+      "name": "New Balance",
+      "subname": "MS327NI",
+      "price": 139,
+      "image": "/hits/hits-product/ms327ni-0.jpg"
+    }
+  ]
+}
