@@ -40,10 +40,11 @@ function Product() {
       setModalMessege("Пожалуйста, выберите цвет и размер товара");
       setModalOpen(true);
       return;
-    } else if (!token) {
-      setModalMessege("Пожалуйста, авторизуйтесь или пройдите регистрацию");
-      setModalOpen(true);
-      return;
+    } 
+    // else if (!token) {
+    //   setModalMessege("Пожалуйста, авторизуйтесь или пройдите регистрацию");
+    //   setModalOpen(true);
+    //   return;
     }
     dispatch(
       addToCart({
