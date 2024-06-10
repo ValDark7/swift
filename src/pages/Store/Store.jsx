@@ -9,6 +9,7 @@ import { fetchSneakers, setSortFilter } from "../../redux/actions/sneakers";
 import Filter from "../../components/Filter/Filter";
 
 import "./store-style.css";
+import bd from "./data.json";
 
 function Store() {
   const items = useSelector(({ sneakers }) => sneakers.items);
@@ -36,20 +37,23 @@ function Store() {
       <div className="store">
         <div className="products">
           {isLoaded
-            ? items.map((product, index) => (
-                <NavLink
-                  preventScrollReset={false}
-                  key={product.id}
-                  to={`/product/${index}`}
-                >
-                  <Product
+            ? bd.sneakers.map(
+                //изменить bd.sneakers на items
+                (product, index) => (
+                  <NavLink
+                    preventScrollReset={false}
                     key={product.id}
-                    name={product.name}
-                    price={product.price}
-                    image={product.image}
-                  />
-                </NavLink>
-              ))
+                    to={`/product/${index}`}
+                  >
+                    <Product
+                      key={product.id}
+                      name={product.name}
+                      price={product.price}
+                      image={product.image}
+                    />
+                  </NavLink>
+                )
+              )
             : Array(10).fill(<SneakersLoading />)}
         </div>
       </div>
