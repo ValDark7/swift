@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const login = (username, password) => async (dispatch) => {
   try {
-    const res = await axios.post("http://5.35.91.86:4000/api/auth/login", {
+    const res = await axios.post("http://5.35.91.86:3002/api/auth/login", {
       username,
       password,
     });
@@ -18,7 +18,7 @@ export const login = (username, password) => async (dispatch) => {
 export const register = (userData) => async (dispatch) => {
   try {
     const res = await axios.post(
-      "http://5.35.91.86:4000/api/auth/register",
+      "http://5.35.91.86:3002/api/auth/register",
       userData
     );
     const { token } = res.data;

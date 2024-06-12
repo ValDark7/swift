@@ -14,7 +14,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://5.35.91.86:4000/api/auth/login", {
+      const res = await axios.post("http://5.35.91.86:3002/api/auth/login", {
         username,
         password,
       });
