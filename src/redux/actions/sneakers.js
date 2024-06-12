@@ -1,15 +1,11 @@
-import axios from "axios";
+import db from "../../pages/Store/data.json";
 
 export const fetchSneakers =
   (sortBy = "") =>
   (dispatch) => {
-    const url = `http://localhost:3001/sneakers${
-      sortBy ? `?_sort=${sortBy}` : ""
-    }`;
+    const url = `${db.sneakers}${sortBy ? `?_sort=${sortBy}` : ""}`;
 
-    axios.get(url).then(({ data }) => {
-      dispatch(setSneakers(data));
-    });
+    dispatch(setSneakers(url));
   };
 
 export const setSneakers = (items) => ({

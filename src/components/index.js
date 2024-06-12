@@ -2,7 +2,7 @@ export { default as Brands } from "./Brand/Brands.jsx";
 export { default as CartProduct } from "./CartProduct/CartProduct.jsx";
 export { default as Categories } from "./Categories/Categories.jsx";
 export { default as Header } from "./Header/Header.jsx";
-export { default as Product } from "./Product/Product.jsx";
+export { default as ProductStore } from "./Product/ProductStore.jsx";
 export { default as ProfileSidebar } from "./ProfileSidebar/ProfileSidebar.jsx";
 export { default as Seasons } from "./Seasons/Seasons.jsx";
 export { default as Sidebar } from "./Sidebar/Sidebar.jsx";

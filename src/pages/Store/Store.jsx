@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Header, Product, SneakersLoading } from "../../components/";
+import { Header, ProductStore, SneakersLoading } from "../../components/";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -36,25 +36,15 @@ function Store() {
       <Filter sortBy={sortBy} handleSortChange={handleSortChange} />
       <div className="store">
         <div className="products">
-          {isLoaded
-            ? bd.sneakers.map(
-                //изменить bd.sneakers на items
-                (product, index) => (
-                  <NavLink
-                    preventScrollReset={false}
-                    key={product.id}
-                    to={`/product/${index}`}
-                  >
-                    <Product
-                      key={product.id}
-                      name={product.name}
-                      price={product.price}
-                      image={product.image}
-                    />
-                  </NavLink>
-                )
-              )
-            : Array(10).fill(<SneakersLoading />)}
+          {bd.sneakers.map((product, index) => (
+            <NavLink to={`/product/${index}`}>
+              <ProductStore
+                name={product.name}
+                price={product.price}
+                image={product.image}
+              />
+            </NavLink>
+          ))}
         </div>
       </div>
     </>

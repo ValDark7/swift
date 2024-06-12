@@ -6,13 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../redux/actions/cart";
 import Modal from "react-modal";
 import Path from "../../components/path/path";
+import db from "../Store/data.json";
 
 import "./style-product.css";
 
 Modal.setAppElement("#root");
 
 function Product() {
-  const items = useSelector(({ sneakers }) => sneakers.items);
+  const items = db.sneakers;
 
   const { id } = useParams();
   const product = items[id];

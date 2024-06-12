@@ -1,6 +1,7 @@
 import "./product-style.css";
+import React from "react";
 
-function Product(props) {
+function ProductStore(props) {
   return (
     <div className="product" key={props.key}>
       <img src={props.image} alt="" />
@@ -14,4 +15,4 @@ function Product(props) {
   );
 }
 
-export default Product;
+export default ProductStore;
